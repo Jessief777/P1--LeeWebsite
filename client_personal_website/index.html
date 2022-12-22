@@ -3,10 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
-    />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <title>Lee's Personal Website</title>
@@ -62,7 +58,7 @@
               <div class="home-icons-line">
                 <span class="title">Find with me</span>
                 <ul class="home-icons-links">
-                  <li class="facebook icon-btn"><a href="#"><i class="uil uil-linkedin-alt"></i></a>
+                  <li class="linkedin icon-btn"><a href="#"><i class="uil uil-linkedin-alt"></i></a>
                   </li>
                   <li class="linkedin icon-btn"><a href="#"><i class="uil uil-envelope"></i></a>
                   </li>
@@ -92,41 +88,41 @@
           <div>
             <ul class="portfolio-cards">
               <li class="portfolio-card">
-                <img src="src/images/Dribble/01-WV.jpg" alt="">
+                <img src="src/images/main_images/01-WV.jpg" alt="">
                 <div class="portfolio-card-text">
                   <h3>world vision</h3>
                   <p>White label child sponsorship.</p>
                 </div>
               </li>
               <li class="portfolio-card">
-                <img src="src/images/Dribble/03-EY.jpg" alt="">
+                <img src="src/images/main_images/02-EY.jpg" alt="">
                 <div class="portfolio-card-text">
                   <h3>EY</h3>
                   <p>EY New employee onboarding system.</p>
                 </div>
               </li>
               <li class="portfolio-card">
-                <img src="src/images/Dribble/02-Mooday.jpg" alt="">
+                <img src="src/images/main_images/03-Mooday.jpg" alt="">
                 <div class="portfolio-card-text">
                   <h3>mooday</h3>
                   <p>Activities recommender base on your current mood.</p>
                 </div>
               </li>
               <li class="portfolio-card">
-                <img src="src/images/Dribble/04-VD.png" alt="">
+                <img src="src/images/main_images/04-VD.png" alt="">
                 <div class="portfolio-card-text">
                   <h3>Visual Design</h3>
                 </div>
               </li>
               <li class="portfolio-card">
-                <img src="src/images/Dribble/05-AP.png" alt="">
+                <img src="src/images/main_images/05-AP.png" alt="">
                 <div class="portfolio-card-text">
                   <h3>AUPOST</h3>
                   <p>Parcel sending experience of Mypost.</p>
                 </div>
               </li>
               <li class="portfolio-card">
-                <img src="src/images/Dribble/06-UI.png" alt="">
+                <img src="src/images/main_images/06-UI.png" alt="">
                 <div class="portfolio-card-text">
                   <h3>UI Design</h3>
                 </div>
@@ -142,18 +138,20 @@
           </div>
           <div class="about-me-cards">
             <ul>
-              <li class="about-me-card">
-                <p>I am passionate about designing digital experience. I believe that good digital experience can benefits to user, and contribut happiness to the world. I worked as UI/UX designer in Startup and medium-sized company. All my design projects are user-centred, a deep understanding of user behavior can brings great design outcomes. I am self-motivated learner, and I usually do video course on Skillshare.</p>
+              <li class="active about-me-card">
+                <p>I am passionate about designing digital experience. I believe that good digital experience can benefits to user, and contribut happiness to the world. I worked as UI/UX designer in Startup and medium-sized company. <br><br>All my design projects are user-centred, a deep understanding of user behavior can brings great design outcomes. I am self-motivated learner, and I usually do video course on Skillshare.</p>
               </li>
               <li class="about-me-card">
                 <h4>BOOKS I'M READING</h4>
-                <img src="src/images/Dribble/books.jpg" alt="">
+                <img src="src/images/main_images/books.jpg" alt="">
               </li>
               <li class="about-me-card">
                 <h4>LANGUAGES I'M LEARNING</h4>
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>Javascript</p>
+                <div class="languages">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>Javascript</span>
+                </div>
               </li>
             </ul>
           </div>
@@ -161,17 +159,54 @@
         <!-- About Me Page End-->
         <!-- Contact Me Page Start-->
         <section class="contact-page">
-          <h2>Contact</h2>
+          <h2>Contact With Me</h2>
           <div class="contact-box">
-            <div class="contact-page-img">img</div>
-            <div class="contact-page-form">Form</div>
+            <div class="contact-box-left">
+              <div class="contact-left-img">
+                <img src="src/images/3d/Saly-31.png" alt="connect image">
+              </div>
+              <div class="contact-box-text">
+                <h4>Chunkit Lee</h4>
+                <p>I am available for freelance work. Connect with me via and call in to my account.</p>
+                <br>
+                <p><strong>Email:</strong>  <span>contact@xxxxxx.me</span></p>
+              </div>
+              <div class="contact-icons-line home-icons-line">
+                <span class="title">Find with me</span>
+                <ul class="contact-links home-icons-links">
+                  <li class="linkedin icon-btn"><a href="#"><i class="uil uil-linkedin-alt"></i></a>
+                  </li>
+                  <li class="facebook icon-btn"><a href="#"><i class="uil uil-facebook"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="contact-page-right">
+              <form action="#">
+                <div class="form-input-group">
+                  <label for="name">Your Name</label>
+                  <input class="text-input" type="text" id="name" name="name" required>
+                  <label for="phone">Phone Number</label>
+                  <input class="text-input no-arrow" type="number" id="phone" name="phone">
+                  <label for="email">Email</label>
+                  <input class="text-input" type="text" id="email" name="email" required>
+                  <label for="subject">Subject</label>
+                  <input class="text-input" type="text" id="subject" name="subject">
+                  <label for="msg">Your Message</label>
+                  <textarea class="text-input input-msg" type="text" id="msg" name="msg" required></textarea>
+                </div>
+                <button type="submit">Send Message<span><i class="uil uil-arrow-right"></i></span></button>
+              </form>
+            </div>
           </div>
         </section>
         <!-- Contact Me Page End-->
       </main>
       <!-- Main End -->
-
-      <footer class="footer">Footer</footer>
+      <footer class="footer">
+        <img src="src/images/icons/logo.png" alt="">
+        <p>&copy; 2022 Copyright by Jessie Feng</p>
+      </footer>
 
       <script type="module" src="/index.js"></script>
     </div>

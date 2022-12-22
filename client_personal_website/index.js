@@ -1,4 +1,3 @@
-import "./index.css";
 import "./style.css";
 // --navbar--
 const hamburger = document.querySelector(".hamburger-menu");
