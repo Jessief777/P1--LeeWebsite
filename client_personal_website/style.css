@@ -488,6 +488,13 @@ p {
   border-radius: 5px;
   margin: 1rem 0;
 }
+.contact-page input:-webkit-autofill,
+.contact-page input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+.contact-page input[data-autocompleted] {
+  background-color: transparent !important;
+}
 .contact-page .form-input-group .no-arrow {
   appearance: none;
   -moz-appearance: textfield;
