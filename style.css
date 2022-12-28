@@ -491,7 +491,7 @@ p {
 .contact-page .contact-page-right .text-input {
   min-width: 100%;
   background-color: #212428;
-  border: 2px solid #212428;
+  border: 1px solid #212428;
   padding: 1rem;
   font-size: 1.2rem;
   width: 25rem;
@@ -522,6 +522,7 @@ p {
 }
 .contact-page .text-input:focus {
   outline: none;
+  transition: 0.3s ease-in;
   border: 1px solid #fd4520;
 }
 .contact-page button {
