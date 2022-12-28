@@ -5,6 +5,17 @@ html {
   height: 100vh;
   background-color: #212528;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 0.5rem;
+  border-radius: 1rem;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #fd4520;
+  border-radius: 1rem;
 }
 
 * {
@@ -422,6 +433,7 @@ p {
 }
 .contact-page h2 {
   text-align: center;
+  margin-bottom: 3rem;
 }
 .contact-page .contact-box {
   display: flex;
@@ -526,6 +538,26 @@ p {
 .contact-page button:hover {
   transition: 0.4s;
   transform: translateY(-5px);
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 1rem;
+  right: 2rem;
+  cursor: pointer;
+  z-index: 999;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  border-radius: 50%;
+  background-color: #212528;
+  text-align: center;
+  box-shadow: 12px 12px 24px #1a1d1f, -12px -12px 24px #282d31;
+}
+
+.back-to-top:hover {
+  background-color: #1a1d1f;
+  transition: 0.3s ease-in-out;
 }
 
 footer {

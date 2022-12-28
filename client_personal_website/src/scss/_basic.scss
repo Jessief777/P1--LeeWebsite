@@ -1,0 +1,38 @@
+/* ---Basic--- */
+$background-color: #212528;
+$font-primary-color: #b8c2d0;
+$font-secondary-color: #fd4520;
+$font-home-color: #fff;
+
+html {
+  width: 100vw;
+  min-width: 320px;
+  height: 100vh;
+  background-color: $background-color;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+  width: 0.5rem;
+  border-radius: 1rem;
+}
+
+html::-webkit-scrollbar-thumb{
+  background: $font-secondary-color;
+  border-radius: 1rem;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  color: $font-primary-color;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  user-select: none;
+  border: none;
+}
+
+/* ---Basic--- */
