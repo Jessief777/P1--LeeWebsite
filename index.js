@@ -1,4 +1,4 @@
-import "./style.css";
+// import "./style.css";
 // --navbar--
 const hamburger = document.querySelector(".hamburger-menu");
 const navMenu = document.querySelector(".nav-menu");
