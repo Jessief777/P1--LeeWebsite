@@ -443,7 +443,7 @@ p {
   flex-wrap: wrap;
   gap: 3rem;
 }
-.contact-page .contact-box-left {
+.contact-page .contact-box-info {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -455,31 +455,32 @@ p {
   border-radius: 1rem;
   box-shadow: 17px 17px 30px #1a1d1f, -17px -17px 30px #282d31;
 }
-.contact-page .contact-box-left .contact-left-img {
+.contact-page .contact-box-info .contact-info-img {
   width: 21rem;
 }
-.contact-page .contact-box-left .contact-left-img img {
+.contact-page .contact-box-info .contact-info-img img {
   width: 100%;
+  width: 21rem;
 }
-.contact-page .contact-box-left .contact-box-text span {
+.contact-page .contact-box-info .contact-info-text span {
   color: #fd4520;
 }
-.contact-page .contact-box-left .contact-icons-line {
+.contact-page .contact-box-info .contact-icons-line {
   width: 100%;
 }
-.contact-page .contact-box-left .contact-icons-line .contact-links {
+.contact-page .contact-box-info .contact-icons-line .contact-links {
   display: flex;
   margin: 2rem 0;
   gap: 1rem;
 }
-.contact-page .contact-box-left:hover {
+.contact-page .contact-box-info:hover {
   transform: scale(1);
 }
-.contact-page .contact-box-left:hover img {
+.contact-page .contact-box-info:hover img {
   transform: scale(1.1);
   transition: 0.5s ease-in-out;
 }
-.contact-page .contact-page-right {
+.contact-page .contact-page-form {
   display: flex;
   width: 60%;
   height: 48rem;
@@ -489,7 +490,7 @@ p {
   box-shadow: 17px 17px 30px #1a1d1f, -17px -17px 30px #282d31;
   text-transform: uppercase;
 }
-.contact-page .contact-page-right .text-input {
+.contact-page .contact-page-form .text-input {
   min-width: 100%;
   background-color: #212428;
   border: 1px solid #212428;
@@ -661,8 +662,8 @@ footer p {
   .about-me-page .about-me-cards li::after {
     left: -4rem;
   }
-  .contact-page .contact-box-left,
-  .contact-page .contact-page-right {
+  .contact-page .contact-box-info,
+  .contact-page .contact-page-form {
     width: 90%;
   }
 }
@@ -747,7 +748,7 @@ footer p {
   .contact-page {
     max-width: 100%;
   }
-  .contact-page .contact-page-right .text-input {
+  .contact-page .contact-page-form .text-input {
     width: 21rem;
   }
   footer {
@@ -807,7 +808,7 @@ footer p {
   .contact-box {
     width: 140%;
   }
-  .contact-box .contact-page-right .text-input {
+  .contact-box .contact-page-form .text-input {
     width: 15rem;
   }
   footer {
