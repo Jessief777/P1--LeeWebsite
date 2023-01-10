@@ -246,6 +246,11 @@ p {
     margin: 2rem 0;
     gap: 1rem;
   }
+
+  .home-icon-skills {
+    z-index: -1;
+  }
+
   .home-icons-links i,
   .home-icon-items img {
     width: 1.5rem;
@@ -257,6 +262,7 @@ p {
   width: 4rem;
   height: 4rem;
   background: #212528;
+  cursor: pointer;
 }
 
 .home-icons-links li:hover,
