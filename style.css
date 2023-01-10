@@ -31,42 +31,11 @@ html::-webkit-scrollbar-thumb {
 }
 
 /* ---Basic--- */
-/* ---utilities-- */
-/* ---flexbox--- */
-.flex {
+/* ---Nav Bar Start-- */
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.flex-center-wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-/* ---box-shadow-- */
-.card-box-shadow {
-  border-radius: 1rem;
-  box-shadow: 17px 17px 30px #1a1d1f, -17px -17px 30px #282d31;
-}
-
-.icon-box-shadow {
-  border-radius: 1rem;
-  box-shadow: 12px 12px 24px #1a1d1f, -12px -12px 24px #282d31;
-}
-
-/* ---utilities-- */
-/* ---Nav Bar Start-- */
-header {
   gap: 1rem;
   position: fixed;
   top: -0.5%;
@@ -99,6 +68,10 @@ header {
 .nav-btn span {
   color: #fd4520;
   font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .nav-btn:hover,
@@ -215,6 +188,9 @@ p {
 /* ---Main Layout End-- */
 /* ---Home Page Start-- */
 .home-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 7rem;
   gap: 1rem;
 }
@@ -299,9 +275,16 @@ p {
 }
 
 .icon-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
   width: 4rem;
   height: 4rem;
+  border-radius: 1rem;
   background: #212528;
+  box-shadow: 12px 12px 24px #1a1d1f, -12px -12px 24px #282d31;
 }
 
 .home-icons-links li:hover,
@@ -340,6 +323,8 @@ p {
   height: 25rem;
   padding: 1rem;
   border: 1px solid #212528;
+  border-radius: 1rem;
+  box-shadow: 12px 12px 24px #1c1f22, -12px -12px 24px #262b2e;
 }
 .portfolio-page .portfolio-card img {
   width: 100%;
@@ -375,6 +360,10 @@ p {
 /* ---Portfolio Page End-- */
 /* ---AboutMe Page Start-- */
 .about-me-page .about-me-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   margin: 2rem;
 }
 .about-me-page .about-me-card {
@@ -390,6 +379,8 @@ p {
   margin-bottom: 2rem;
   padding: 1rem 2rem;
   border: 1px solid #212528;
+  border-radius: 1rem;
+  box-shadow: 17px 17px 30px #1a1d1f, -17px -17px 30px #282d31;
   position: relative;
 }
 .about-me-page .languages {
@@ -447,20 +438,30 @@ p {
   margin-bottom: 3rem;
 }
 .contact-page .contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 3rem;
 }
 .contact-page .contact-box-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   width: 30%;
   height: 48rem;
   padding: 3rem;
   border: 1px solid #212528;
+  border-radius: 1rem;
+  box-shadow: 17px 17px 30px #1a1d1f, -17px -17px 30px #282d31;
 }
 .contact-page .contact-box-info .contact-info-img {
   width: 21rem;
 }
 .contact-page .contact-box-info .contact-info-img img {
   width: 100%;
-  max-width: 22rem;
+  width: 21rem;
 }
 .contact-page .contact-box-info .contact-info-text span {
   color: #fd4520;
@@ -486,6 +487,8 @@ p {
   height: 48rem;
   border: none;
   padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 17px 17px 30px #1a1d1f, -17px -17px 30px #282d31;
   text-transform: uppercase;
 }
 .contact-page .contact-page-form .text-input {
@@ -540,7 +543,9 @@ p {
   width: 100%;
   border: none;
   font-size: 18px;
+  border-radius: 1rem;
   background: #212528;
+  box-shadow: 12px 12px 24px #1a1d1f, -12px -12px 24px #282d31;
 }
 .contact-page button:hover {
   transition: 0.4s;
@@ -561,6 +566,7 @@ p {
   border-radius: 50%;
   background-color: #212528;
   text-align: center;
+  box-shadow: 12px 12px 24px #1a1d1f, -12px -12px 24px #282d31;
 }
 
 .back-to-top:hover {
@@ -570,8 +576,12 @@ p {
 
 /* ---footer-- */
 footer {
+  display: flex;
+  justify-content: center;
   flex-direction: column;
   gap: 2rem;
+  align-items: center;
+  text-align: center;
   margin-top: 2rem;
   width: 100%;
   height: 20rem;
