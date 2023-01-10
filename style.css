@@ -31,16 +31,8 @@ html::-webkit-scrollbar-thumb {
 }
 
 /* ---Basic--- */
-.card-box-shadow {
-  border-radius: 1rem;
-  box-shadow: 17px 17px 30px #1a1d1f, -17px -17px 30px #282d31;
-}
-
-.icon-box-shadow {
-  border-radius: 1rem;
-  box-shadow: 12px 12px 24px #1a1d1f, -12px -12px 24px #282d31;
-}
-
+/* ---utilities-- */
+/* ---flexbox--- */
 .flex {
   display: flex;
   justify-content: space-between;
@@ -61,6 +53,18 @@ html::-webkit-scrollbar-thumb {
   flex-wrap: wrap;
 }
 
+/* ---box-shadow-- */
+.card-box-shadow {
+  border-radius: 1rem;
+  box-shadow: 17px 17px 30px #1a1d1f, -17px -17px 30px #282d31;
+}
+
+.icon-box-shadow {
+  border-radius: 1rem;
+  box-shadow: 12px 12px 24px #1a1d1f, -12px -12px 24px #282d31;
+}
+
+/* ---utilities-- */
 /* ---Nav Bar Start-- */
 header {
   gap: 1rem;
@@ -215,10 +219,10 @@ p {
   gap: 1rem;
 }
 
-/* ---Home Page Left Start-- */
+/* ---Home Page Text Start-- */
 .home-text {
-  max-width: 100%;
-  width: 38rem;
+  width: 100%;
+  max-width: 38rem;
   height: 30rem;
   margin-right: 1rem;
 }
@@ -306,8 +310,8 @@ p {
   transform: translateY(-7px);
 }
 
-/* ---Home Page Left Start-- */
-/* ---Home Page Right Start-- */
+/* ---Home Page Text Start-- */
+/* ---Home Page Image Start-- */
 .home-img {
   border-radius: 1rem;
   box-shadow: 15px 15px 30px #111315, -15px -15px 30px #31373b;
@@ -316,7 +320,7 @@ p {
   width: 25rem;
 }
 
-/* ---Home Page Right End-- */
+/* ---Home Page Image End-- */
 /* ---Home Page End-- */
 /* ---Portfolio Page Start-- */
 .portfolio-page {
@@ -331,7 +335,7 @@ p {
   gap: 2rem;
 }
 .portfolio-page .portfolio-card {
-  max-width: 100%;
+  width: 100%;
   width: 23rem;
   height: 25rem;
   padding: 1rem;
@@ -395,7 +399,8 @@ p {
   margin: 2rem;
 }
 .about-me-page img {
-  width: 30rem;
+  width: 100%;
+  max-width: 30rem;
 }
 
 .about-me-page .about-me-cards li::before {
@@ -450,9 +455,12 @@ p {
   padding: 3rem;
   border: 1px solid #212528;
 }
+.contact-page .contact-box-info .contact-info-img {
+  width: 21rem;
+}
 .contact-page .contact-box-info .contact-info-img img {
   width: 100%;
-  max-width: 21rem;
+  max-width: 22rem;
 }
 .contact-page .contact-box-info .contact-info-text span {
   color: #fd4520;
@@ -539,6 +547,8 @@ p {
   transform: translateY(-5px);
 }
 
+/* ---Contact Page End-- */
+/* ---back to top button-- */
 .back-to-top {
   position: fixed;
   bottom: 1rem;
@@ -558,6 +568,7 @@ p {
   transition: 0.3s ease-in-out;
 }
 
+/* ---footer-- */
 footer {
   flex-direction: column;
   gap: 2rem;
@@ -567,13 +578,14 @@ footer {
   border-top: 1px solid #212528;
 }
 footer img {
-  width: 5rem;
+  width: 100%;
+  max-width: 5rem;
 }
 footer p {
   font-size: 0.8rem;
 }
 
-/*responsive setting*/
+/*responsive setting start*/
 @media only screen and (min-width: 1500px) {
   .container {
     margin: 0 8rem;
@@ -628,11 +640,9 @@ footer p {
     transform: scale(0.8);
     transform-origin: left;
   }
-  .home-page .home-img {
-    width: 20rem;
-  }
   .home-page .home-img img {
     width: 100%;
+    max-width: 25rem;
   }
   .portfolio-page .portfolio-card {
     width: 40%;
@@ -685,7 +695,7 @@ footer p {
     gap: 2rem;
   }
   .home-page .home-img {
-    width: 30rem;
+    max-width: 30rem;
     margin-top: 5rem;
   }
   .portfolio-page {
@@ -702,9 +712,6 @@ footer p {
   .portfolio-page .portfolio-card:last-child {
     height: 35rem;
   }
-  .about-me-page {
-    max-width: 100%;
-  }
   .about-me-page .about-me-card {
     width: 30rem;
     height: 27rem;
@@ -713,8 +720,7 @@ footer p {
     margin: 3rem;
   }
   .about-me-page .about-me-card img {
-    max-width: 100%;
-    width: 26rem;
+    max-width: 26rem;
     margin: 2rem;
   }
   .about-me-page .about-me-cards li::before {
@@ -727,9 +733,6 @@ footer p {
     height: 0.7rem;
     left: -3.2rem;
     top: 9.4rem;
-  }
-  .contact-page {
-    max-width: 100%;
   }
   .contact-page .contact-page-form .text-input {
     width: 21rem;
@@ -797,9 +800,7 @@ footer p {
   footer {
     height: 10rem;
   }
-  footer img {
-    width: 3rem;
-  }
 }
+/*responsive setting end*/
 
 /*# sourceMappingURL=style.css.map */

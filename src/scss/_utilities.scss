@@ -1,14 +1,6 @@
-// icon-box-shadow, card-box-shadow
-.card-box-shadow {
-  border-radius: 1rem;
-  box-shadow: 17px 17px 30px #1a1d1f, -17px -17px 30px #282d31;
-}
+/* ---utilities-- */
 
-.icon-box-shadow{
-  border-radius: 1rem;
-  box-shadow: 12px 12px 24px #1a1d1f, -12px -12px 24px #282d31;
-}
-// flex-space-between
+/* ---flexbox--- */
 .flex {
   display: flex;
   justify-content: space-between;
@@ -28,3 +20,16 @@
   align-items: center;
   flex-wrap: wrap;
 }
+
+/* ---box-shadow-- */
+.card-box-shadow {
+  border-radius: 1rem;
+  box-shadow: 17px 17px 30px #1a1d1f, -17px -17px 30px #282d31;
+}
+
+.icon-box-shadow{
+  border-radius: 1rem;
+  box-shadow: 12px 12px 24px #1a1d1f, -12px -12px 24px #282d31;
+}
+
+/* ---utilities-- */
