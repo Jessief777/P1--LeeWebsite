@@ -31,38 +31,11 @@ html::-webkit-scrollbar-thumb {
 }
 
 /* ---Basic--- */
-.card-box-shadow {
-  border-radius: 1rem;
-  box-shadow: 17px 17px 30px #1a1d1f, -17px -17px 30px #282d31;
-}
-
-.icon-box-shadow {
-  border-radius: 1rem;
-  box-shadow: 12px 12px 24px #1a1d1f, -12px -12px 24px #282d31;
-}
-
-.flex {
+/* ---Nav Bar Start-- */
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.flex-center-wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-/* ---Nav Bar Start-- */
-header {
   gap: 1rem;
   position: fixed;
   top: -0.5%;
@@ -482,9 +455,12 @@ p {
   border-radius: 1rem;
   box-shadow: 17px 17px 30px #1a1d1f, -17px -17px 30px #282d31;
 }
+.contact-page .contact-box-info .contact-info-img {
+  width: 21rem;
+}
 .contact-page .contact-box-info .contact-info-img img {
   width: 100%;
-  max-width: 21rem;
+  width: 21rem;
 }
 .contact-page .contact-box-info .contact-info-text span {
   color: #fd4520;
